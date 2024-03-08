@@ -1,0 +1,135 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color:  #FFFFFF;
+    font-family: "Source Sans 3", sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+.nav-links {
+    margin-left: auto;
+    margin-right: 0.5em;
+    color: #090909;
+
+}
+.nav-links a{
+    text-decoration: none;
+    margin-left: 1em;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.phone{
+    font-size: 3rem;
+}
+.title{
+ margin-left: 1em;
+ font-weight: 900;
+
+  
+}
+.icon-title{
+    display: flex;
+    align-items: center;
+}
+.header-article{
+    background-image: url(images/michael-dziedzic-gEN5Btvf2Eg-unsplash.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    line-height: 2;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+    color: #FFFFFF;
+}
+.header-article p{
+   color: #FFFFFF;
+    text-shadow: 0 0 1px;
+
+}
+.header-article h1{
+    font-weight: 900;
+    text-shadow:  0 0 1px;
+}
+
+.container{
+    width: 95%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:0 1rem;
+    line-height: 1.5;
+    margin:0 auto;
+    
+}
+ img{
+    width: 100%;
+    height: 50%;
+
+}
+.article-preview{
+    margin-bottom: 1em;
+    margin-left: 0.5em
+}
+.article-title{
+    margin-top: 1em;
+    margin-left: 0.5em
+}
+article img{
+    border-radius: 5px;
+}
+h2{
+    margin-left:0.5rem;
+    color: #141414;
+    font-weight: 700;
+}
+footer{
+    background-color:#202020 ;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    flex-direction: column;
+}
+footer h4 {
+    color: #ECECEC;
+    font-weight: 700;
+}
+footer p {
+    color: #D7D7D7;
+    font-size: 0.75rem;
+}
+p{
+    color: #151515;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+
+@media (min-width:678px){
+   .container{
+    grid-template-columns:repeat(3,minmax(240px ,350px));
+   justify-content: center; 
+} 
+.header-article p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family:sans-serif;
+}
+.header-article h1{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+}
